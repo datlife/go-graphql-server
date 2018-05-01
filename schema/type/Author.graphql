@@ -1,0 +1,8 @@
+type Author{
+    id: ID!
+    name: String!
+    email: String!
+    twitter: String
+    github: String
+    posts: [Post]
+}

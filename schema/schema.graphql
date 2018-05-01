@@ -1,0 +1,16 @@
+schema {
+    query: query
+    mutation: Mutation
+}
+type Query{
+    authorById(id: ID!): Author
+    postById(id: ID!): Post
+    postsById(ids: [ID!]!: Int, after: String): [Post!]
+}
+
+type Mutation{
+    createPost(id: ID!, post: Post): Post
+    removePost(id: ID!): Boolean
+    thumbUp(postID: ID!): Int
+}
+

@@ -1,0 +1,8 @@
+type Post {
+    id: String!
+    title: String!
+    author: Author!
+    summary: String!
+    category: [Category]
+    likes: Int!
+}
